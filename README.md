@@ -8,7 +8,7 @@
   >Flyway是一款开源的数据库版本管理工具，它更倾向于规约优于配置的方式。Flyway可以独立于应用实现管理并跟踪数据库变更，支持数据库版本自动升级，并且有一套默认的规约，不需要复杂的配置，Migrations可以写成SQL脚本，也可以写在Java代码中，不仅支持Command Line和Java API，还支持Build构建工具和Spring Boot等，同时在分布式环境下能够安全可靠地升级数据库，同时也支持失败恢复等。
 ### 1.2  Flyway如何运行
   >Flyway对数据库进行版本管理主要由Metadata表和6种命令完成，Metadata主要用于记录元数据，每种命令功能和解决的问题范围不一样。
-[Flyway命令行介绍](https://blog.waterstrong.me/flyway-in-practice/)
+[Flyway命令行介绍](https://flywaydb.org/documentation/commandline/)
 ### 1.3  Flyway中sql脚本的命名规则
   
   - sql脚本的命名规则组成
