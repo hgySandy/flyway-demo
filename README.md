@@ -217,7 +217,18 @@ mvn spring-boot：run
 |____README.md
 
 ```
-## 4. flyway拓展阅读
+## 4.flyway的优缺点
+- 优点：
+    - 通过简单的配置，flyway可在服务启动时自动执行事先准备好的sql或java代码,对数据库进行版本同步
+- 缺点：ß
+    - flyway同步数据库所依赖的sql语句必须人工准备，无法通过Java bean 自动生成，这跟python中常用的数据库迁移工具简直差了N多条街
+
+>换句话说：数据库有了新的改动，导出新版本sql文件(如：mysqldump -u -p databasename>/userhome/xx.sql)改为新版本命名文件放到db.migration路径下，flyway才会自动帮你更新数据库版本）。
+
+
+
+
+## 5. flyway拓展阅读
 
 [flyway官网](https://flywaydb.org/)
 
